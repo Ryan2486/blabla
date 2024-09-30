@@ -1,0 +1,163 @@
+[ {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 09:55:18",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4da43b36",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 11:47:34",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3c8a0e16",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 14:07:06",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@530bd1f9",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 14:16:01",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@704557aa",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:14:26",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@79babd61",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:16:10",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@1248662c",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:17:47",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5fd33ad4",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:19:03",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@31d908ea",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:20:26",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@76a06058",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:20:44",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@32f7178f",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:21:52",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4aacf62",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:24:18",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3c3fed82",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:30:28",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@7e9ffc1c",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:36:29",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@7a5e91b7",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:37:52",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@67dfb592",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 15:38:27",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5ed8a0a6",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 19:23:43",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5eadd77",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-23 19:53:23",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5a8e75f",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+} ]

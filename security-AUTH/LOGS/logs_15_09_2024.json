@@ -1,0 +1,17 @@
+[ {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-15 10:13:41",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@31d2cdbb",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-15 10:15:37",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@4e5415de",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST"
+} ]

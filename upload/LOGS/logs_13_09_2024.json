@@ -1,0 +1,81 @@
+[ {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:49:47",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@129732a4",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:51:05",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@618cce42",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:53:03",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@9a13684",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:53:24",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@1f22e638",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:53:47",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@4dc534ea",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:55:17",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@5a451b00",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:56:12",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@4f313e6",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:56:15",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@4a1bd816",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:57:09",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@1d7c3723",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-13 10:57:22",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@55dfd7a2",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST"
+} ]

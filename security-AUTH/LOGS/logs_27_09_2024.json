@@ -1,0 +1,10 @@
+[ {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-27 14:58:13",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5d12a617",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+} ]

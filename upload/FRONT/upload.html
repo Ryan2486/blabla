@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Upload Form</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/css/stylePerso.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="Logo">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+        
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown pe-3">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+                </a><!-- End Profile Image Icon -->
+        
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                    <h6></h6>
+                    <span></span>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+        
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Déconnexion</span>
+                    </a>
+                </li>
+                </ul><!-- End Profile Dropdown Items -->
+            </li><!-- End Profile Nav -->
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+      
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Accueil</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+      
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#file-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-files"></i><span>File Processing</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="file-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-circle"></i><span>Importation generique</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="nav-link collapsed" data-bs-target="#security-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-shield-lock"></i><span>Sécurité</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="security-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="./logs.html">
+                            <i class="bi bi-circle"></i><span>Trace</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Configuration Nav -->
+            </li>
+      
+        </ul>
+    </aside>
+    <main  id="main" class="main">
+        <div class="pagetitle">
+            <h1> Importation Générique</h1>
+        </div>
+        <div class="card card-information">
+            <div class="card-body">
+                <h2 class="card-title">Mode d'emploi</h2>
+                <div class="container mt-5">
+                    <ol>
+                        <li>
+                            <p class="instruction">
+                                Veuillez sélectionner un fichier excel à importer
+                            </p>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <p class="instruction">
+                                        Si le fichier excel n'a encore aucune table correspondante dans la base de donnée, <br>
+                                        laisser vide la liste déroulante "Nom de Table" et cliquer sur le bouton "Valider"
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="instruction">
+                                        Si le fichier excel a une table correspondante dans la base de donnée, sélectionner <br>
+                                        le nom de la table correspondante
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="instruction">
+                                Si une table a été sélectionnée, une liste de colonne devrait apparaitre, rearranger la liste <br>
+                                pour que les l'ordre des colonnes du fichier excel correspondent à l'ordre des colonnes de la <br>
+                                table
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                    <div class="container mt-5">
+                    <h2 class="mb-4">Formulaire d'importation Excel</h2>
+                    <div id="message"></div>
+                    <form id="uploadForm">
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Fichier Excel</label>
+                            <input type="file" class="form-control" id="file" name="file" accept=".xlsx, .xls" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tableName" class="form-label">Nom des Tables</label>
+                            <input list="options" class="form-control" id="tableName" name="tableName">
+                            <datalist id="options">
+                                
+                            </datalist>
+                            <!-- <select type="text" class="form-control" id="tableName" name="tableName">
+                                <option></option>
+                            </select> -->
+                        </div>
+                        <div id="columns">
+                            <label for="Column name" class="form-label">Liste des Colonnes</label>
+                            <!-- List to hold the inputs -->
+                            <ul id="columnsList">
+                                <!-- List of inputs will be dynamically added here -->
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Valider</button>
+                        <div id="loader" hidden>
+                            <div class="d-flex align-items-center">
+                                <strong>Loading...</strong>
+                                <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; <strong><span>2024 <a href="https://www.banky-foibe.mg/">BANKY FOIBEN'I MADAGASIKARA</a></span></strong>. Tous droits réservés.
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+    </a>
+</body>
+</html>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/chart.js/chart.umd.js"></script>
+<script src="assets/vendor/echarts/echarts.min.js"></script>
+<script src="assets/vendor/quill/quill.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/js/upload.js"></script>
+<script>
+    // Call the checkToken function when the page loads
+    window.onload = checkToken;
+    $(document).ready(function() {        
+        initTableName();
+        bindSelectChange();
+    });
+</script>

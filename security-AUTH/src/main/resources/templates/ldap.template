@@ -1,0 +1,31 @@
+# LDAP Server Settings
+ldap.url=#LDAPURL#:#PORT#
+ldap.base.dn=#DOMAIN_NAME#
+
+# Authentication Settings
+ldap.security.authentication=#AUTH_TYPE#
+ldap.security.principal.suffix=#SUFFIX#
+
+# Connection Pool Settings
+ldap.pool.min.size=#MIN#
+ldap.pool.max.size=#MAX#
+ldap.pool.timeout=#TIMEOUT_POOL#
+
+# Search Settings
+ldap.search.filter=(objectClass=user)
+ldap.search.attributes=memberOf,cn,sAMAccountName
+
+# Timeout Settings (in milliseconds)
+ldap.connect.timeout=#TIMEOUT_CONNECT#
+ldap.read.timeout=#TIMEOUT_READ#
+
+# SSL/TLS Settings (if using LDAPS)
+ldap.use.ssl=#SSL#
+ldap.ssl.keystore=#KEYSTORE_PATH#
+ldap.ssl.keystore.password=#KEYSTORE_PWD#
+
+# Referral Settings
+ldap.referral=follow
+
+# Debug Settings
+ldap.debug=false

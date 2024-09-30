@@ -1,0 +1,55 @@
+[ {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-27 13:55:57",
+  "status" : 200,
+  "data" : "Filename :Compil_tsy_mandeha.xlsx, CheckSum : 8c3ff370a2cfc6bad1d246162a3d85c46fd52d44c60a49284583c380c1827803",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-27 14:41:04",
+  "status" : 200,
+  "data" : "Filename :Compil_tsy_mandeha.xlsx, CheckSum : 8c3ff370a2cfc6bad1d246162a3d85c46fd52d44c60a49284583c380c1827803",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-27 14:48:17",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@5295d444",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-27 14:48:20",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@7f4d574e",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-27 14:48:22",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@4c4990ae",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-27 14:48:23",
+  "status" : 200,
+  "data" : "org.uploads.utils.Credentials@37f0a213",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+} ]

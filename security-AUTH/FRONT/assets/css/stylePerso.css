@@ -1,0 +1,16 @@
+#columnsList{
+    list-style: none;
+}
+
+.table{
+    width: auto !important;
+    table-layout: auto !important;
+}
+
+.card-information{
+    background-color: #cff4fc;  
+}
+
+.instruction{
+    font-size: larger;
+}   

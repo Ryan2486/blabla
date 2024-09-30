@@ -1,0 +1,352 @@
+[ {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 10:27:54",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@8b2594e",
+  "endpoint" : "/files/upload_generic2",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 10:28:16",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@7c5bd5d2",
+  "endpoint" : "/files/upload_generic2",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 10:29:07",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@34aa7238",
+  "endpoint" : "/files/upload_generic2",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 10:31:18",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@2567cc76",
+  "endpoint" : "/files/upload_generic2",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:14:18",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@47242acc",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:15:02",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@78f71a25",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:16:24",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@4df214c7",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:17:22",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@72844a25",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:20:23",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@35d491d7",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:23:01",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@5325ddff",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:26:21",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@5325ddff",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:27:39",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@4df214c7",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:28:16",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@42db442e",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:34:27",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@7cecc187",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:38:52",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@7cecc187",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 11:43:31",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@6acc50de",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 13:57:10",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@79bf758d",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 13:59:32",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@72844a25",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:01:19",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@678ddad0",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:42:59",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@1ef79164",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:43:26",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@6c9aa5a9",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:44:00",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@1101bd52",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:44:54",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@250de3fa",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:47:03",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@7a1f00be",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:47:22",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@6ea646a9",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:47:30",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@185eb28e",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:48:02",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@55cb7933",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 14:48:44",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@5e9f88b3",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 15:05:14",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@1158f8d2",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 15:05:45",
+  "status" : 500,
+  "data" : "Filename :Compil_tsy_mandeha.xlsx, CheckSum : [B@1dcbbe88",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 15:37:28",
+  "status" : 500,
+  "data" : "Filename :Compil_tsy_mandeha.xlsx, CheckSum : [B@160106e1",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 15:38:03",
+  "status" : 500,
+  "data" : "Filename :Compil_tsy_mandeha.xlsx, CheckSum : [B@7c5bd5d2",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 15:44:58",
+  "status" : 200,
+  "data" : "Filename :Compil_tsy_mandeha.xlsx, CheckSum : [B@43d2ce2f",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 15:45:09",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@231a297a",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 15:45:34",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@1ef79164",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 16:02:12",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@ca5ff73",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 16:04:50",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@30c6bfd8",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 16:07:49",
+  "status" : 200,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@42db442e",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-16 16:08:11",
+  "status" : 500,
+  "data" : "Filename :Compil.xlsx, CheckSum : [B@41a07cb",
+  "endpoint" : "/files/upload_generic",
+  "method" : "POST",
+  "error" : ""
+} ]

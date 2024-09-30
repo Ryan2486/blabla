@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LOGIN</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/styleLogin.css" rel="stylesheet">
+        <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="assets/img/new_logo_bleu.jpg" id="icon" alt="User Icon" />
+            <h1><a><h5><span>CONNECTION PORTAL</span></h1></a></h5>
+            <div id="error"></div>
+          </div>
+
+          <!-- Login Form -->
+          <form action="#" method="POST" id="login-form" autocomplete="off">
+            <input type="text" id="matricule" class="fadeIn second" name="matricule" placeholder="N° Matricule" required>
+            <input type="password" id="mdp" class="fadeIn third" name="mdp" placeholder="Mot de passe" required>
+            <input type="submit" class="fadeIn fourth" value="Connexion">
+          </form>
+        </div>
+      </div>
+
+      <!-- JS -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/login.js"></script>
+    </body>
+</html>

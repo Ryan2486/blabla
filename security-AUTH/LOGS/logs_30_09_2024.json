@@ -1,0 +1,28 @@
+[ {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-30 10:50:32",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@1394fe71",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-30 10:52:03",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3be4a3fc",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "127.0.0.1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-30 10:52:08",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@751f4b14",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+} ]

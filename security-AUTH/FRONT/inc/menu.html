@@ -1,0 +1,50 @@
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+  
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">
+                <i class="bi bi-grid"></i>
+                <span>Accueil</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+  
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#configuration-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-gear"></i><span>Configuration</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="configuration-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="kerberos.html">
+                        <i class="bi bi-circle"></i><span>Kerberos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ldap.html">
+                        <i class="bi bi-circle"></i><span>LDAP</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="nav-link collapsed" data-bs-target="#file-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-files"></i><span>File Processing</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="file-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="./upload.html">
+                        <i class="bi bi-circle"></i><span>Importation generique</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="nav-link collapsed" data-bs-target="#security-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-shield-lock"></i><span>Sécurité</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="security-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="logs.html">
+                        <i class="bi bi-circle"></i><span>Trace</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Configuration Nav -->
+  
+    </ul>
+</aside>

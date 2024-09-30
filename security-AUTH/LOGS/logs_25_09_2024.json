@@ -1,0 +1,37 @@
+[ {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-25 14:21:32",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@1c3f66a",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-25 15:35:24",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3be4a3fc",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-25 15:41:06",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5e7059c8",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-09-25 15:49:07",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4c3d581c",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+} ]

@@ -1,0 +1,1 @@
+cls && mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Djava.security.auth.login.config=E:\BFM\security-AUTH\src\main\resources\jaas.conf -Djava.security.krb5.conf=E:\BFM\security-AUTH\src\main\resources\krb5.conf -Dsun.security.krb5.debug=true -Djava.security.debug=logincontext"

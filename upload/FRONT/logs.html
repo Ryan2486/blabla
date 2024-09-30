@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log table</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="Logo">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+        
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown pe-3">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+                </a><!-- End Profile Image Icon -->
+        
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                    <h6></h6>
+                    <span></span>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+        
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Déconnexion</span>
+                    </a>
+                </li>
+                </ul><!-- End Profile Dropdown Items -->
+            </li><!-- End Profile Nav -->
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+      
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Accueil</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+      
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#file-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-files"></i><span>File Processing</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="file-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="./upload.html">
+                            <i class="bi bi-circle"></i><span>Importation generique</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="nav-link collapsed" data-bs-target="#security-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-shield-lock"></i><span>Sécurité</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="security-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-circle"></i><span>Trace</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Configuration Nav -->
+        </ul>
+    </aside>
+    <main  id="main" class="main">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="mb-4">Log Table</h1>
+                        <div class="row mb-3">
+                            <div class="col-md-5 row">
+                                <label for="dateStart" class="col-sm-3 form-label">Date Debut:</label>
+                                <div class="col-sm-9">
+                                    <input type="date" id="dateStart" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-5 row">
+                                <label for="dateEnd" class="col-sm-3 form-label">Date Fin:</label>
+                                <div class="col-sm-9">
+                                    <input type="date" id="dateEnd" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-2 d-flex align-items-end">
+                                <button id="searchBetween" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <table id="dataTable" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-2">IP Address</th>
+                                        <th class="col-md-2">Location</th>
+                                        <th class="col-md-2">Date Time</th>
+                                        <th class="col-md-1">Status</th>
+                                        <th class="col-md-2">Data</th>
+                                        <th class="col-md-2">Endpoint</th>
+                                        <th class="col-md-1">Method</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Column Chart</h5>
+                        <div id="columnChart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; <strong><span>2024 <a href="https://www.banky-foibe.mg/">BANKY FOIBEN'I MADAGASIKARA</a></span></strong>. Tous droits réservés.
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+    </a>
+</body>
+</html>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/chart.js/chart.umd.js"></script>
+<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="assets/vendor/echarts/echarts.min.js"></script>
+<script src="assets/vendor/quill/quill.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/js/jquery.dataTables.min.js"></script>
+<script src="assets/js/dataTables.bootstrap5.min.js"></script>
+<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+<script src="assets/vendor/chart.js/chart.umd.js"></script>
+<script src="assets/vendor/echarts/echarts.min.js"></script>
+
+<script>
+    const API_URL = "http://localhost:8082";
+    $(document).ready(function() {
+        let table;
+        var token = localStorage.getItem('token');
+    // Function to fetch data from API
+    function fetchData() {
+        // Replace this URL with your actual API endpoint
+        const apiUrl = `${API_URL}/logs/of`;
+        var formData = {
+            dateStart: $("#dateStart").val(),
+            dateEnd: $("#dateEnd").val()
+        };
+        $.ajax({
+            url: apiUrl,
+            method: 'GET',
+            data: formData,
+            headers: {
+                'Authorization': 'Bearer ' + token  // Add the Bearer token here
+            },
+            success: function(response) {
+                // Assuming the API returns an array of objects
+                console.log(response.data);
+                populateTable(response.data.dataLogs);
+                populateChart(response.data);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching data:', error);
+                // alert('Error fetching data. Please try again.');
+            }
+        });
+    }
+
+    function populateChart(data){
+        new ApexCharts(document.querySelector("#columnChart"), {
+                    series: [{
+                      name: 'Status 400',
+                      data: data.status4xx
+                    }, {
+                      name: 'Status 200',
+                      data: data.status2xx
+                    }, {
+                      name: 'Status 500',
+                      data: data.status5xx
+                    }],
+                    chart: {
+                      type: 'bar',
+                      height: 350
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: false,
+                        columnWidth: '55%',
+                        endingShape: 'rounded'
+                      },
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      show: true,
+                      width: 2,
+                      colors: ['transparent']
+                    },
+                    xaxis: {
+                      categories: data.endpoints,
+                    },
+                    yaxis: {
+                      title: {
+                        text: ''
+                      }
+                    },
+                    fill: {
+                      opacity: 1
+                    },
+                    tooltip: {
+                      y: {
+                      }
+                    }
+                  }).render();
+    }
+
+    // Function to populate the table
+    function populateTable(data) {
+        if (table) {
+            table.destroy();
+        }
+        table = $('#dataTable').DataTable({
+            data: data,
+            columns: [
+                { data: 'ipAddress' },
+                { data: 'location' },
+                { data: 'dateTime' },
+                { data: 'status' },
+                { data: 'data' },
+                { data: 'endpoint' },
+                { data: 'method' }
+            ],
+            pageLength: 5
+        });
+    }
+
+    // Event listener for search button
+    $('#searchBetween').on('click', function() {
+        fetchData();
+    });
+
+    // Initial data fetch
+    fetchData();
+});
+</script>

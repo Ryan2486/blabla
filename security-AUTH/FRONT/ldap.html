@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>LDAP Configuration Form</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/utils.js"></script>  
+    <script>
+        $(document).ready(function() {
+            // Use the function from utils.js to include HTML content
+            includeHTML('inc/menu.html', 'menu');
+            includeHTML('inc/header.html', 'header');
+            includeHTML('inc/footer.html', 'footer');
+        });
+    </script>
+</head>
+
+<body>
+    
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="Logo">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+        
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown pe-3">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+                </a><!-- End Profile Image Icon -->
+        
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                    <h6></h6>
+                    <span></span>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+        
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Déconnexion</span>
+                    </a>
+                </li>
+                </ul><!-- End Profile Dropdown Items -->
+            </li><!-- End Profile Nav -->
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header>
+    
+
+    <div id="menu"></div>
+
+    <main  id="main" class="main">
+
+        <div class="card">
+            <div class="card-body">
+                <div class="container mt-5">
+                    <form action="#" method="POST" id="ldapForm">
+                        <h2 class="mb-3 row">LDAP Server Settings</h2>
+                        <div id="message"></div>
+                        <div class="mb-3 row">
+                            <label for="ldap_url" class="col-sm-2 form-label">LDAP URL:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ldap_url" name="ldap_url" value="ldap://192.168.203.153 " required>
+                            </div>
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_port" class="col-sm-2 form-label">LDAP Port:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="ldap_port" name="ldap_port" value="389" required>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_base_dn" class="col-sm-2 form-label">Base DN:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ldap_base_dn" name="ldap_base_dn" value="test.AD" required>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_auth_type" class="col-sm-2 form-label">Authentication Type:</label>
+                            <div class="col-sm-10">
+                                <select name="ldap_auth_type" id="ldap_auth_type" class="form-control">
+                                    <option value="simple">simple</option>
+                                    <option value="anonymous">anonymous</option>
+                                    <option value="SASL">SASL</option>
+                                </select>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_suffix" class="col-sm-2 form-label">Principal Suffix:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ldap_suffix" name="ldap_suffix" value="@test.AD" required>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_pool_min" class="col-sm-2 form-label">Pool Min Size:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="ldap_pool_min" name="ldap_pool_min" value="5" required>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_pool_max" class="col-sm-2 form-label">Pool Max Size:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="ldap_pool_max" name="ldap_pool_max" value="10" required>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_pool_timeout" class="col-sm-2 form-label">Pool Timeout (ms):</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="ldap_pool_timeout" name="ldap_pool_timeout" value="300000" required>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_connect_timeout" class="col-sm-2 form-label">Connect Timeout (ms):</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="ldap_connect_timeout" name="ldap_connect_timeout" value="5000" required>
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_read_timeout" class="col-sm-2 form-label">Read Timeout (ms):</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="ldap_read_timeout" name="ldap_read_timeout" value="5000" required>
+                            </div>
+            
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="ldap_keystore_path" class="col-sm-2 form-label">SSL:</label>
+                            <div class="col-sm-10">
+                                <select name="SSL" id="SSL" class="form-control">
+                                    <option value="true">true</option>
+                                    <option value="false">false</option>
+                                </select>
+                            </div>
+            
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="ldap_keystore_path" class="col-sm-2 form-label">Keystore Path:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ldap_keystore_path" name="ldap_keystore_path" value="/path/to/keystore.jks">
+                            </div>
+            
+                        </div>
+            
+                        <div class="mb-3 row">
+                            <label for="ldap_keystore_pwd" class="col-sm-2 form-label">Keystore Password:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ldap_keystore_pwd" name="ldap_keystore_pwd" value="keystorePassword">
+                            </div>
+            
+                        </div>
+            
+                        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="footer"></div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+</body>
+</html>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/chart.js/chart.umd.js"></script>
+<script src="assets/vendor/echarts/echarts.min.js"></script>
+<script src="assets/vendor/quill/quill.min.js"></script>
+<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/js/ldap.js"></script>
