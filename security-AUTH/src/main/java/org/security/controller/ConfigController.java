@@ -8,7 +8,6 @@ import org.security.utils.properties.KerberosProperties;
 import org.security.utils.properties.LdapProperties;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-// import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class ConfigController {
 
     @PostMapping("/ldap")
-    @PreAuthorize("hasAuthority('groupe_test')")
+    @PreAuthorize("hasAuthority('Users')")
     public ResponseEntity<APIResponse> configLDAP(@RequestBody LdapProperties prop) {
         APIResponse response = new APIResponse();
         try {
@@ -31,7 +30,7 @@ public class ConfigController {
     }
     
     @PostMapping("/kerberos")    
-    @PreAuthorize("hasAuthority('groupe_test')")
+    @PreAuthorize("hasAuthority('Users')")
     public ResponseEntity<APIResponse> configKerberos(@RequestBody KerberosProperties prop) {
         APIResponse response = new APIResponse();
         try {

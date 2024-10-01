@@ -16,6 +16,7 @@ import org.springframework.http.ResponseEntity;
 
 import org.security.response.APIResponse;
 import org.security.service.ADAuth;
+import org.security.utils.ADGroupRetrieval;
 import org.security.utils.Credentials;
 import org.security.utils.KerberosObject;
 import org.security.utils.jwt.JWTUtilRSA;
@@ -23,7 +24,6 @@ import org.security.utils.jwt.JWTUtilRSA;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.Base64;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -49,22 +49,24 @@ public class AuthController {
         APIResponse result = new APIResponse();
         HttpStatus status =  HttpStatus.OK;
         try {
-            // KerberosObject ticket = adAuthService.authenticateDetails(username, password);
-            Set<String> roles = new HashSet<>();
-            roles.add("User");
-            roles.add("groupes_test");
-            // if (ticket != null) {
+            ADGroupRetrieval groupRetrieval = new ADGroupRetrieval();
+            KerberosObject ticket = adAuthService.authenticateDetails(username, password);
+            Set<String> roles = groupRetrieval.getGroupsFromAD(username, password);
+            // Set<String> roles = new HashSet<>();
+            // roles.add("Users");
+            // roles.add("groupes_test");
+            if (ticket != null) {
                 HashMap<String, Object> datas = new HashMap<>();
                 String token = JWTUtilRSA.generateTokenWithKerberosTicket(
                     username,
-                    "Kerberosticket",
+                    ticket.getSessionKey(),
                     roles
                 );
                 datas.put("token", token);
                 result.setData(datas);
-            // } else {
-            //     result.setError("Authentication failed: No Kerberos ticket obtained.");
-            // }
+            } else {
+                result.setError("Authentication failed: No Kerberos ticket obtained.");
+            }
         } catch (Exception e) {
             result.setError("Authentication failed: " + e.getMessage());
             status = HttpStatus.BAD_REQUEST;
@@ -75,10 +77,7 @@ public class AuthController {
     }
 
     @GetMapping("/public_key")
-    public String getPublicKey(
-            HttpServletRequest request, 
-            HttpServletResponse response
-        ){
+    public String getPublicKey(HttpServletRequest request, HttpServletResponse response){
         return JWTUtilRSA.getPublicKeyAsBase64();
     }
 }
