@@ -4,7 +4,6 @@ import org.trace.service.APICallDetails;
 import org.trace.service.APILogger;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,7 +28,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
-@CrossOrigin(origins = "*")
 @RequestMapping("/login")
 public class AuthController {
 
@@ -52,9 +50,6 @@ public class AuthController {
             ADGroupRetrieval groupRetrieval = new ADGroupRetrieval();
             KerberosObject ticket = adAuthService.authenticateDetails(username, password);
             Set<String> roles = groupRetrieval.getGroupsFromAD(username, password);
-            // Set<String> roles = new HashSet<>();
-            // roles.add("Users");
-            // roles.add("groupes_test");
             if (ticket != null) {
                 HashMap<String, Object> datas = new HashMap<>();
                 String token = JWTUtilRSA.generateTokenWithKerberosTicket(
