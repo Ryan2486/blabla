@@ -5,7 +5,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -18,22 +17,22 @@ public class FileProcessingService {
     private final JdbcTemplate jdbcTemplate;
     private final DbService dbService;
 
-    public FileProcessingService(SequenceService sequenceService, JdbcTemplate jdbcTemplate, DbService dbService) {
+    public FileProcessingService(SequenceService sequenceService, JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
         this.sequence = sequenceService;
-        this.dbService = dbService;
+        this.dbService = new DbService(jdbcTemplate);
     }
 
-    public void prepareImport(List<String> columns, String fileName) throws SQLException{
+    public void prepareImport(List<String> columns, String fileName) throws Exception{
         dbService.prepareImport(columns, fileName);
     }
 
     @Transactional
     public void processGenericExcelFile(String filePath, Lot exelLot, String tableName, String[] columns) throws Exception{
         try {
-            if(!tableName.contains("UP_")){
-                tableName = "UP_" + tableName.toUpperCase();
-            }
+            // if(!tableName.contains("UP_")){
+            //     tableName = "UP_" + tableName.toUpperCase();
+            // }
             List<String[]> objects = ExcelReader.readExcel(filePath);
             String numeroLot = insertLot(exelLot, tableName); 
             this.dbService.insertDataIntoOracle(objects, tableName, columns, numeroLot);
@@ -42,7 +41,6 @@ public class FileProcessingService {
         }
     }
 
-    @Transactional
     public String insertLot(Lot excelLot, String tableName) throws Exception{
         String sequenceName = "lot_" + tableName + "_seq";
         String lotTableName = "lot_" + tableName;
@@ -61,7 +59,7 @@ public class FileProcessingService {
             excelLot.getNom(),
             sqlTimestamp);
             
-        // System.out.println("NUMBER OF ROW UPDATED: " + value);
+        System.out.println("NUMBER OF ROW UPDATED: " + value);
         return primaryKey;
     }
 }

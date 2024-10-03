@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.uploads.response.APIResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -20,6 +21,7 @@ public class SchemaController {
     DbService dbService;
 
     @PostMapping("/tables")
+    @PreAuthorize("hasAuthority('Users')")
     public APIResponse getTableNames() {
         APIResponse response = new APIResponse();
         try {
@@ -32,6 +34,7 @@ public class SchemaController {
     }
 
     @PostMapping("/columns")
+    @PreAuthorize("hasAuthority('Users')")
     public APIResponse getTableColumnNames(@RequestBody String tableName) {
         APIResponse response = new APIResponse();
         try {

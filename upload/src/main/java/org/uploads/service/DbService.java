@@ -1,19 +1,23 @@
 package org.uploads.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.sql.SQLException;
 import java.text.Normalizer;
 
 @Service
 public class DbService {
     
-    @Autowired
     private JdbcTemplate jdbcTemplate;
+
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
+    public DbService(JdbcTemplate template){
+        this.setJdbcTemplate(template);
+    } 
 
     private String[] processColumnAndValuesList(String[] columns){
         String[] processedColumnAndValues = new String[2];
@@ -45,9 +49,9 @@ public class DbService {
         return sqlQueryFirstPart + sqlQuerySecondPart;
     }
 
-    @Transactional
     public void insertDataIntoOracle(List<String[]> data, String tableName, String[] columns, String lot) {
         String sql = this.createQuery(tableName, columns);
+        System.out.println(data.get(0).length);
         // Batch update to insert all rows efficiently
         jdbcTemplate.batchUpdate(sql, data, data.size(), (ps, row) -> {
             for (int i = 0; i < row.length; i++) {
@@ -74,10 +78,10 @@ public class DbService {
         );   
     }
 
-        // 1. Create the table LOT_filename if it doesn't exist
-    public void createLotTableIfNotExists(String filename) {
+        // 1. Create the table LOT_tableName if it doesn't exist
+    public void createLotTableIfNotExists(String tableName) {
         String createTableSQL = "BEGIN " +
-        "EXECUTE IMMEDIATE 'CREATE TABLE LOT_filename (" +
+        "EXECUTE IMMEDIATE 'CREATE TABLE LOT_tableName (" +
         "id_lot VARCHAR2(50), " +
         "nom_lot VARCHAR2(255), " +
         "date_importation DATE, " +
@@ -86,24 +90,24 @@ public class DbService {
         "EXCEPTION WHEN OTHERS THEN " +
         "IF SQLCODE = -955 THEN NULL; ELSE RAISE; END IF; " + // Table already exists
         "END;";
-        createTableSQL = createTableSQL.replace("filename", filename);
+        createTableSQL = createTableSQL.replace("tableName", tableName);
         jdbcTemplate.execute(createTableSQL);
     }
 
-    // 2. Create the sequence LOT_filename
-    public void createLotSequenceIfNotExists(String filename) {
+    // 2. Create the sequence LOT_tableName
+    public void createLotSequenceIfNotExists(String tableName) {
         String createSequenceSQL = "BEGIN " +
-        "EXECUTE IMMEDIATE 'CREATE SEQUENCE LOT_filename_seq     START WITH 1 INCREMENT BY 1'; " +
+        "EXECUTE IMMEDIATE 'CREATE SEQUENCE LOT_tableName_seq START WITH 1 INCREMENT BY 1'; " +
         "EXCEPTION WHEN OTHERS THEN " +
         "IF SQLCODE = -955 THEN NULL; ELSE RAISE; END IF; " + // Sequence already exists
         "END;";
-        createSequenceSQL = createSequenceSQL.replace("filename", filename);
+        createSequenceSQL = createSequenceSQL.replace("tableName", tableName);
         jdbcTemplate.execute(createSequenceSQL);
     }
 
-    // 3. Create a table based on the first row of data with a foreign key to LOT_filename
-    public void createImportTableFromFirstRow(List<String> columns, String filename) throws SQLException {
-        String tableName = normalizeColumnName(filename);  // Ensure the filename is normalized
+    // 3. Create a table based on the first row of data with a foreign key to LOT_tableName
+    public void createImportTableFromFirstRow(List<String> columns, String filename) throws Exception {
+        String tableName = normalizeColumnName(filename);  // Ensure the tableName is normalized
 
         // Building SQL script to create the table
         StringBuilder createTableSQL = new StringBuilder();
@@ -114,7 +118,7 @@ public class DbService {
         }
     
         createTableSQL.append("Lot VARCHAR2(50), ");
-        createTableSQL.append("FOREIGN KEY (Lot) REFERENCES LOT_").append(normalizeColumnName(filename)).append("(id_lot))");
+        createTableSQL.append("FOREIGN KEY (Lot) REFERENCES LOT_").append(normalizeColumnName(tableName)).append("(id_lot))");
     
         String sql = createTableSQL.toString();
         // Now use EXECUTE IMMEDIATE in PL/SQL block to handle if table already exists
@@ -147,12 +151,12 @@ public class DbService {
         return normalized; // Oracle column names are usually uppercase
     }
 
-    public void prepareImport(List<String> columns, String filename) throws SQLException{
-        if(!filename.contains("UP_")){
-            filename = "UP_" + filename.toUpperCase();
+    public void prepareImport(List<String> columns, String tableName) throws Exception{
+        if(!tableName.contains("UP_")){
+            tableName = "UP_" + tableName.toUpperCase();
         }
-        createLotTableIfNotExists(filename);
-        createLotSequenceIfNotExists(filename);
-        createImportTableFromFirstRow(columns, filename);
+        createLotTableIfNotExists(tableName);
+        createLotSequenceIfNotExists(tableName);
+        createImportTableFromFirstRow(columns, tableName);
     }
 }

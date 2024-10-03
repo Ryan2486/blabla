@@ -24,9 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .cors().and()
             .csrf().disable() // Disable CSRF for non-browser clients
-            .authorizeRequests()
-            .antMatchers("/files/**").permitAll()  
-            .antMatchers("/schema/**").permitAll()               
+            .authorizeRequests()              
             .anyRequest().authenticated() // All other endpoints
             .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);

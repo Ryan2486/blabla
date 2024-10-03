@@ -6,6 +6,7 @@ import org.trace.service.APICallDetails;
 import org.trace.service.APILogger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
@@ -23,6 +24,7 @@ public class FileUploadController {
     private FileService fileUploadService;
 
     @PostMapping("/upload_generic")
+    @PreAuthorize("hasAuthority('Users')")
     public ResponseEntity<?> uploadFileGeneric(
         @RequestParam("file") MultipartFile file,
         @RequestParam("tableName") String tableName,
@@ -37,16 +39,13 @@ public class FileUploadController {
             data += "Filename :" + file.getOriginalFilename();
             data += ", CheckSum : " + FileService.getChecksum(file);
             if(!tableName.equals("") && !columnsJson.equals("[]")){
-                System.out.println("MIDITRA 1, " + columnsJson);
                 ObjectMapper mapper = new ObjectMapper();
                 String[] columns = mapper.readValue(columnsJson, String[].class);
                 message = fileUploadService.genericUploadAndReadFile(file, tableName, columns);
             }else if(!tableName.equals("") && columnsJson.equals("[]")){
-                System.out.println("MIDITRA 2");
                 message = fileUploadService.genericUploadAndReadFile(file, tableName);
             }
             else{
-                System.out.println("MIDITRA 3");
                 message = fileUploadService.genericUploadAndReadFile(file);
             }
         }catch (IllegalArgumentException e) {
