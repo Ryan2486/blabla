@@ -1,0 +1,595 @@
+[ {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:22:50.618",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@46c1842b",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:24:30.303",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5e464a9b",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:27:09.127",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@2409b88",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:34:46.445",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@a76b78d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:43:44.487",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@32caa096",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:46:37.188",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3cd70df",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:49:23.532",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@71302151",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:49:46.906",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4963ca3e",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:50:39.123",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@103a14af",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 14:58:53.839",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@1a646b56",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:01:01.596",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@854a073",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:02:55.412",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@66bf816b",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:04:00.084",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@58a79f86",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:06:43.071",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@25d18022",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:15:01.556",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@8edfc6",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:17:43.169",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@45ca21b6",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:19:37.198",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@702fa03b",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:35:21.963",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@21f7e85b",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:35:29.511",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@7fa555e",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:37:53.409",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@de40b49",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:42:37.754",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@ce668e1",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:42:50.797",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3235806d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:50:15.734",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@128460e6",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:51:47.098",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4963ca3e",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:54:56.870",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@306eae20",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:55:10.586",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@28832ec9",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:55:22.818",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5eb95de7",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:55:47.021",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@44abc890",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:55:56.427",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3090dc10",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:56:36.925",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5c690bf1",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:56:52.682",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@1386f1d8",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:57:01.117",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@10ad79e9",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:57:09.576",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@313e52c8",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:57:20.992",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5984d0a3",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:58:06.020",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@12f60df8",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 15:58:52.243",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@480ca887",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 16:00:53.276",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3f83b95e",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 16:03:12.777",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@67d5aa11",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 16:03:48.635",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4082b819",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 16:08:19.595",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@42805cbc",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 16:09:42.240",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@44c573d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 16:26:13.065",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@64c0f6e5",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 16:26:25.670",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@854a073",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:17:55.831",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4b1b0cc4",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:18:32.974",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@42c31b0e",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:18:50.264",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@6b3edd1d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:19:04.691",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@c489bff",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:23:44.999",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@38c1502",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:25:07.148",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@3235806d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:28:00.162",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@43dcca5d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:28:06.602",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@b112252",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 17:28:18.349",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@188ccd5c",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:34:11.402",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@7438728e",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:39:26.885",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@7a8ff050",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:43:13.952",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@7354092d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:43:22.625",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@32a6f332",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:46:17.460",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@2e4f2cb3",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:50:50.439",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@21f7e85b",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:54:26.688",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4ee7a24d",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:55:16.308",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@37ff764a",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 19:59:55.428",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@6c99d904",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 20:00:09.724",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@24b7f978",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 20:00:55.728",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@75a27b5",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 20:05:24.434",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@4ae117b7",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 20:08:50.059",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@5468185",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+}, {
+  "ipAddress" : "0:0:0:0:0:0:0:1",
+  "location" : "Unknown",
+  "dateTime" : "2024-10-03 20:11:57.577",
+  "status" : 200,
+  "data" : "org.security.utils.Credentials@7006f9a",
+  "endpoint" : "/login/authenticate",
+  "method" : "POST",
+  "error" : ""
+} ]

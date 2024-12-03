@@ -1,9 +1,10 @@
 package org.security.utils.jwt;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import java.security.*;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.security.PrivateKey;
+import java.security.PublicKey;
 import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
@@ -12,6 +13,10 @@ import java.util.Set;
 import java.util.function.Function;
 
 import org.springframework.stereotype.Component;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 
 @Component
 public class JWTUtilRSA {
@@ -35,17 +40,21 @@ public class JWTUtilRSA {
         Map<String, Object> claims = new HashMap<>();
         claims.put("kerberosTicket", ticket);
         claims.put("roles", roles);
+        System.out.println("token: " + createToken(claims, username));
         return createToken(claims, username);
     }
 
     private static String createToken(Map<String, Object> claims, String subject) {
-        return Jwts.builder()
+        System.out.println(PRIVATE_KEY);
+        String token = Jwts.builder()
                 .setClaims(claims)
                 .setSubject(subject)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION))
                 .signWith(SignatureAlgorithm.RS256, PRIVATE_KEY)
                 .compact();
+        System.out.println("Token: " + "helloword");
+        return token;
     }
 
     public String extractUsername(String token) {
@@ -72,7 +81,6 @@ public class JWTUtilRSA {
         return extractExpiration(token).before(new Date());
     }
 
-    
     public Boolean validateToken(String token) {
         return (!isTokenExpired(token));
     }
@@ -80,9 +88,9 @@ public class JWTUtilRSA {
     public static String getPublicKeyAsBase64() {
         return Base64.getEncoder().encodeToString(PUBLIC_KEY.getEncoded());
     }
-    
+
     public static PublicKey getPublicKey() {
         return PUBLIC_KEY;
     }
-    
+
 }
